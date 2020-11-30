@@ -1,0 +1,56 @@
+{
+  "name": "tavernier-toolbox",
+  "version": "1.0.0",
+  "description": "A collection of useful TypeScript utilities used on Tavernier-App.",
+  "homepage": "https://github.com/Tavernier-App/tavernier-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/Tavernier-App/tavernier-toolbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tavernier-App/tavernier-toolbox.git"
+  },
+  "author": "Tavernier-App",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm-run-all clean transpile prepublish build-doc",
+    "prepare": "npm run build ",
+    "clean": "rimraf dist",
+    "transpile": "tsc",
+    "prepublish": "npm run prepare-doc",
+    "prepare-doc": "rm -fR dist/ README.md && cp README.md.template README.md",
+    "build-doc": "tsc && ./node_modules/.bin/jsdoc2md ./dist/**/*.js >> README.md",
+    "test": "jest --coverage",
+    "lint": "eslint --ext .ts,.js src/",
+    "lint:fix": "eslint --ext .ts,.js src/ --fix"
+  },
+  "jest": {
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "testEnvironment": "node",
+    "transform": {
+      "\\.(ts)$": "ts-jest"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.3",
+    "jsdoc-to-markdown": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^26.3.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2"
+  }
+}
