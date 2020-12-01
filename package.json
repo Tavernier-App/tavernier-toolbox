@@ -1,6 +1,6 @@
 {
   "name": "@tavernier-app/tavernier-toolbox",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A collection of useful TypeScript utilities used on Tavernier-App.",
   "keywords": ["typescript", "toolbox", "tool", "javascript"],
   "homepage": "https://github.com/Tavernier-App/tavernier-toolbox#readme",

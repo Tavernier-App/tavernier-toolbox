@@ -9,6 +9,10 @@
 
 ## Changelog
 
+-   1.1.1
+
+    -   Configuring Github Package
+
 -   1.1.0
 
     -   Adding Jest Coverage
