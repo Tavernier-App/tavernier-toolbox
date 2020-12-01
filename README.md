@@ -1,8 +1,17 @@
 # Tavernier-toolbox
+![badge1](https://img.shields.io/badge/language-TypeScript-blue) ![badge2](https://img.shields.io/badge/license-ISC-brightgreen)
 
-> A collection of useful TypeScript utilities used on Tavernier-App.
+> A collection of useful TypeScript utilities used on Tavernier-App. Tested with Jest.
+
+| Statements | Branches | Functions | Lines |
+| -----------|----------|-----------|-------|
+| ![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg "Make me better!") | ![Branches](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg "Make me better!") | ![Functions](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg "Make me better!") | ![Lines](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg "Make me better!") |
 
 ## Changelog
+
+-   1.1.0
+
+    -   Adding Jest Coverage
 
 -   1.0.0
 
