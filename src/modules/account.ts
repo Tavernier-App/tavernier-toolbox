@@ -1,7 +1,7 @@
 import { generate } from 'generate-password';
 
 /**
- * Returns a generated password with lowcase letters, uppercase letters and numbers with a lenght of 10 characters.
+ * Returns a generated password with lower case letters, upper case letters and numbers with a lenght of 10 characters.
  * @returns string
  */
 export const generateRandomPassword = (): string => {
@@ -20,7 +20,7 @@ export const generateRandomFourDigitNumber = (): string => {
 }
 
 /**
- * Return an identifier from user first name and last name with a generated random four digit number (e.g. Dupont_J4242 from Dupont Jean).
+ * Return an identifier from user first name and last name with a generated random four digit number.
  * @param firstName user first name as a string
  * @param lastName user last name as a string
  * @returns string
