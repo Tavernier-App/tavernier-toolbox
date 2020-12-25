@@ -9,6 +9,10 @@
 
 ## Changelog
 
+-   1.2.0
+
+    -   Adding Account Module & Updating Jest Coverage
+
 -   1.1.1
 
     -   Configuring Github Package
@@ -24,8 +28,20 @@
 ## Functions
 
 <dl>
-<dt><a href="#checkEmailFormat">checkEmailFormat(email)</a> ⇒</dt>
-<dd><p>Returns true if the string passed as parameter has an email format.</p>
+<dt><a href="#generateRandomPassword">generateRandomPassword()</a> ⇒</dt>
+<dd><p>Returns a generated password with lowcase letters, uppercase letters and numbers with a lenght of 10 characters.</p>
+</dd>
+<dt><a href="#generateRandomFourDigitNumber">generateRandomFourDigitNumber()</a> ⇒</dt>
+<dd><p>Returns a random four digit number.</p>
+</dd>
+<dt><a href="#generateIdentifier">generateIdentifier(firstName, lastName)</a> ⇒</dt>
+<dd><p>Return an identifier from user first name and last name with a generated random four digit number (e.g. Dupont_J4242 from Dupont Jean).</p>
+</dd>
+<dt><a href="#isEmail">isEmail(email)</a> ⇒</dt>
+<dd><p>Returns true if the email passed as parameter has a correct email format.</p>
+</dd>
+<dt><a href="#isPasswordValid">isPasswordValid(password)</a> ⇒</dt>
+<dd><p>Returns true if the given password as parameter respect passwords rules.</p>
 </dd>
 <dt><a href="#isNull">isNull(value)</a> ⇒</dt>
 <dd><p>Returns true if the value sent is null.</p>
@@ -41,10 +57,37 @@
 </dd>
 </dl>
 
-<a name="checkEmailFormat"></a>
+<a name="generateRandomPassword"></a>
 
-## checkEmailFormat(email) ⇒
-Returns true if the string passed as parameter has an email format.
+## generateRandomPassword() ⇒
+Returns a generated password with lowcase letters, uppercase letters and numbers with a lenght of 10 characters.
+
+**Kind**: global function  
+**Returns**: string  
+<a name="generateRandomFourDigitNumber"></a>
+
+## generateRandomFourDigitNumber() ⇒
+Returns a random four digit number.
+
+**Kind**: global function  
+**Returns**: string  
+<a name="generateIdentifier"></a>
+
+## generateIdentifier(firstName, lastName) ⇒
+Return an identifier from user first name and last name with a generated random four digit number (e.g. Dupont_J4242 from Dupont Jean).
+
+**Kind**: global function  
+**Returns**: string  
+
+| Param | Description |
+| --- | --- |
+| firstName | user first name as a string |
+| lastName | user last name as a string |
+
+<a name="isEmail"></a>
+
+## isEmail(email) ⇒
+Returns true if the email passed as parameter has a correct email format.
 
 **Kind**: global function  
 **Returns**: boolean  
@@ -52,6 +95,18 @@ Returns true if the string passed as parameter has an email format.
 | Param | Description |
 | --- | --- |
 | email | string to be checked |
+
+<a name="isPasswordValid"></a>
+
+## isPasswordValid(password) ⇒
+Returns true if the given password as parameter respect passwords rules.
+
+**Kind**: global function  
+**Returns**: boolean  
+
+| Param | Description |
+| --- | --- |
+| password | string to be checked |
 
 <a name="isNull"></a>
 
